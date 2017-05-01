@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="295.0" prefWidth="292.0" style="-fx-background-color: #ffffff; -fx-border-style: solid; -fx-border-color: #eb8427;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TelaLoginController">
+   <children>
+      <FlowPane alignment="CENTER" columnHalignment="CENTER" layoutX="17.0" layoutY="15.0" prefHeight="262.0" prefWidth="251.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb8427; -fx-border-width: 2px; -fx-border-style: solid;">
+         <children>
+            <Label prefHeight="50.0" prefWidth="222.0" text="Grassi Modas" textFill="#eb8427">
+               <font>
+                  <Font name="Tahoma" size="36.0" />
+               </font>
+            </Label>
+            <FlowPane alignment="CENTER" orientation="VERTICAL" prefHeight="181.0" prefWidth="254.0">
+               <children>
+                  <JFXTextField fx:id="txtLogin" focusColor="#eb8427" promptText="Login:">
+                     <FlowPane.margin>
+                        <Insets bottom="20.0" />
+                     </FlowPane.margin>
+                  </JFXTextField>
+                  <JFXPasswordField focusColor="#eb8427" promptText="Senha:">
+                     <FlowPane.margin>
+                        <Insets bottom="5.0" />
+                     </FlowPane.margin>
+                  </JFXPasswordField>
+                  <Pane prefHeight="25.0" prefWidth="200.0">
+                     <children>
+                        <JFXButton fx:id="btLogar" onAction="#clkLogin" prefWidth="80.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb8427;" text="Entrar" />
+                        <JFXButton fx:id="btSair" layoutX="120.0" onAction="#clkSair" prefHeight="25.0" prefWidth="80.0" style="-fx-background-color: #ffffff; -fx-border-color: #eb8427;" text="Sair" />
+                     </children>
+                     <FlowPane.margin>
+                        <Insets top="20.0" />
+                     </FlowPane.margin>
+                  </Pane>
+               </children>
+            </FlowPane>
+         </children>
+      </FlowPane>
+   </children>
+</AnchorPane>

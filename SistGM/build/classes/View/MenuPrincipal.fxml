@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="377.0" prefWidth="595.0" style="-fx-border-color: #eb8427; -fx-border-width: 3; -fx-background-color: #fff;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.MenuPrincipalController">
+   <top>
+      <MenuBar style="-fx-border-color: #eb8427; -fx-border-width: 3; -fx-background-color: #fff;" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu fx:id="mnArquivo" mnemonicParsing="false" text="Arquivo">
+            <items>
+              <MenuItem fx:id="mnSair" mnemonicParsing="false" text="Sair" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnGerenciar" mnemonicParsing="false" text="Gerenciar">
+            <items>
+                  <MenuItem fx:id="mnGCliente" mnemonicParsing="false" text="Cliente" />
+                  <MenuItem fx:id="mnGFuncionario" mnemonicParsing="false" text="Funcionario" />
+              <MenuItem fx:id="mnGEmpresa" mnemonicParsing="false" text="Empresa" />
+                  <MenuItem fx:id="mnGProduto" mnemonicParsing="false" text="Produto" />
+                  <MenuItem fx:id="mnGMarca" mnemonicParsing="false" text="Marca" />
+                  <MenuItem fx:id="mnGTDespesas" mnemonicParsing="false" text="Tipo de Despesas" />
+                  <MenuItem fx:id="mnGFuncoes" mnemonicParsing="false" text="Funções" />
+            </items>
+          </Menu>
+          <Menu fx:id="mnLocalizar" mnemonicParsing="false" text="Localizar">
+            <items>
+                  <MenuItem fx:id="mnLCliente" mnemonicParsing="false" text="Cliente" />
+              <MenuItem fx:id="mnLProduto" mnemonicParsing="false" text="Produto" />
+                  <MenuItem fx:id="mnLFornecedor" mnemonicParsing="false" text="Fornecedor" />
+                  <MenuItem fx:id="mnLFuncionario" mnemonicParsing="false" text="Funcionario" />
+                  <MenuItem fx:id="mnLMarca" mnemonicParsing="false" text="Marca" />
+            </items>
+          </Menu>
+            <Menu fx:id="mnMovimentacao" mnemonicParsing="false" text="Movimentações">
+              <items>
+                <MenuItem fx:id="mnRVenda" mnemonicParsing="false" text="Realizar Venda" />
+                  <MenuItem fx:id="mnRCompra" mnemonicParsing="false" text="Realizar Compra" />
+                  <MenuItem fx:id="mnQPagamento" mnemonicParsing="false" text="Quitar Pagamento" />
+                  <MenuItem fx:id="mnQRecebimento" mnemonicParsing="false" text="Quitar Recebimentos" />
+              </items>
+            </Menu>
+        </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </MenuBar>
+   </top>
+</BorderPane>

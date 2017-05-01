@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #efefef;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.TelaMenuPrincipalController">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="1.0" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #fff;">
+         <top>
+            <MenuBar fx:id="mnLocalizar" style="-fx-background-color: #fff;" BorderPane.alignment="CENTER">
+              <menus>
+                  <Menu fx:id="mnIniciar" mnemonicParsing="false" text="Iniciar">
+                    <items>
+                      <MenuItem fx:id="mnSair" mnemonicParsing="false" onAction="#clkSair" text="Sair" />
+                    </items>
+                  </Menu>
+                <Menu fx:id="mnGerenciar" mnemonicParsing="false" text="Gerenciar">
+                     <items>
+                        <MenuItem fx:id="mnCliente" mnemonicParsing="false" onAction="#clkCliente" text="Cliente" />
+                        <MenuItem fx:id="mnFuncionario" mnemonicParsing="false" onAction="#clkFornecedor" text="Funcionario" />
+                        <MenuItem fx:id="mnFornecedor" mnemonicParsing="false" onAction="#clkFornecedor" text="Fornecedor" />
+                        <MenuItem fx:id="mnEmpresa" mnemonicParsing="false" onAction="#clkEmpresa" text="Empresa" />
+                        <MenuItem fx:id="mnMarca" mnemonicParsing="false" onAction="#clkMarca" text="Marca" />
+                        <MenuItem fx:id="mnTPContasPagar" mnemonicParsing="false" onAction="#clkTPContasPagar" text="Tipo de Conta a Pagar" />
+                        <MenuItem fx:id="mnNivelFuncao" mnemonicParsing="false" onAction="#clkNivelFuncao" text="Nivel_Funcao" />
+                     </items>
+                </Menu>
+                <Menu fx:id="mnLocalizar" mnemonicParsing="false" text="Localizar">
+                  <items>
+                        <MenuItem fx:id="mnLCliente" mnemonicParsing="false" onAction="#clkLCliente" text="Cliente" />
+                        <MenuItem fx:id="mnLFuncionario" mnemonicParsing="false" onAction="#clkLFuncionario" text="Funcionario" />
+                        <MenuItem fx:id="mnLFornecedor" mnemonicParsing="false" onAction="#clkLFornecedor" text="Fornecedor" />
+                        <MenuItem fx:id="mnLEmpresa" mnemonicParsing="false" onAction="#clkLEmpresa" text="Empresa" />
+                        <MenuItem fx:id="mnLMarca" mnemonicParsing="false" onAction="#clkLMarca" text="Marca" />
+                        <MenuItem fx:id="mnLTipoConta" mnemonicParsing="false" onAction="#clkLTipoConta" text="Tipo de Conta a Pagar" />
+                  </items>
+                </Menu>
+                <Menu fx:id="mnMovimentacao" mnemonicParsing="false" text="Movimentações">
+                  <items>
+                        <MenuItem fx:id="mnCompra" mnemonicParsing="false" onAction="#clkCompra" text="Compra" />
+                    <MenuItem fx:id="mnVenda" mnemonicParsing="false" onAction="#clkVenda" text="Venda" />
+                        <MenuItem fx:id="mnContasaPagar" mnemonicParsing="false" onAction="#clkContasaPagar" text="Contas a Pagar" />
+                        <MenuItem fx:id="mnContasaReceber" mnemonicParsing="false" onAction="#clkContasaReceber" text="Contas a Receber" />
+                  </items>
+                </Menu>
+                  <Menu fx:id="mnSobre" mnemonicParsing="false" text="Sobre">
+                    <items>
+                        <MenuItem fx:id="mnSoftware" mnemonicParsing="false" onAction="#clkSoftware" text="Software" />
+                      <MenuItem fx:id="mnSEmpresa" mnemonicParsing="false" onAction="#clkSEmpresa" text="Empresa" />
+                    </items>
+                  </Menu>
+              </menus>
+               <effect>
+                  <DropShadow height="56.58" radius="32.2375" width="74.37" />
+               </effect>
+            </MenuBar>
+         </top>
+      </BorderPane>
+   </children>
+</AnchorPane>

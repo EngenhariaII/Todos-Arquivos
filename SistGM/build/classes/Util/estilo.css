@@ -1,0 +1,7 @@
+.myMenu {
+  -fx-background-color:transparent;
+}
+
+.myMenu:hover {
+  -fx-background-color:#eb8427;
+}
